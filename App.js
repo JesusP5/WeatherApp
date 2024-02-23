@@ -25,16 +25,16 @@ export default function App() {
   };
   let weatherImage;
   if (weatherData && weatherData.current.condition.text.toLowerCase() === 'sunny') {
-    weatherImage =  require('./images/sol.png');
+    weatherImage =  require('sol.png');
   } 
   else if (weatherData && weatherData.current.condition.text.toLowerCase() === 'partly cloudy') {
-    weatherImage = require('./images/dia-nublado.png');
+    weatherImage = require('dia-nublado.png');
   }
   else if (weatherData && weatherData.current.condition.text.toLowerCase() === 'rain') {
-    weatherImage = require('./images/lluvia.png');
+    weatherImage = require('lluvia.png');
   }
   else if (weatherData && weatherData.current.condition.text.toLowerCase() === 'overcast') {
-    weatherImage = require('./images/dia-nublado.png');
+    weatherImage = require('dia-nublado.png');
   }
 
   useEffect( () => {
